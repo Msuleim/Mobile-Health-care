@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow: 4px 2px 2px 2px rgba(250, 244, 244, 0.568);
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#home {
+    background: url('red-logo.png') no-repeat;
+    font-size: 24px;
+    color: #080808;
+    padding: 70px;
+}
+
+#about, #contact {
+    background-color: #eee;
+    padding: 40px 20px;
+}
+
+#first-aid {
+    padding: 40px 20px;
+}
+
+.first-aid-item {
+    margin: 20px 0;
+}
+
+.first-aid-i img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    
+}
+/* Add these styles to your existing styles.css */
+
+.collapsible {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+.collapsible:hover {
+    background-color: #ccc;
+}
+.bbtn {
+    background-color: #141414;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 18px;
+    margin: 18px;
+    padding: 10px;
+    float: right;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    padding: 0 20px;
+    margin: 18px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #eee;
+    margin-bottom: 15px;
+    transition: background-color 0.5s ease;
+}
+.content:hover {
+    background-color: #ccc;
+}
+.image-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.image-button img {
+    display: block;
+}
+.btn-2, .btn-4, .btn-6, .btn-8, .btn-10, .btn-12, .btn-13 {
+    border: 4px solid #ccc;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding: 10px 0;
+    justify-content: space-around;
+    transition: background-color 0.5s ease;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+}
+.btn-2 :hover, .btn-4 :hover, .btn-6 :hover, .btn-8 :hover, .btn-10 :hover, .btn-12 :hover, .btn-13 :hover {
+    background-color: #ccc;
+    box-shadow: 5px 5px 10px 3px #333;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #home {
+        padding: 30px 20px;
+    }
+
+    #about, #contact, #first-aid {
+        padding: 30px 20px;
+    }
+
+    .first-aid-item {
+        margin: 15px 0;
+    }
+}
